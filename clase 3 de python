@@ -1,0 +1,406 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jhomivlz98/Programaci-n-1/blob/master/clase%203%20de%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "a4m2uzeIdjdG",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "for x in range(100,50,-5)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7oGKrldxeLzu",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "x = 5\n",
+        "while x> 0:\n",
+        "  x = x-1\n",
+        "  print(\"hola\")\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AnPoMNU9f_31",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "name = 'temp'\n",
+        "varName = []\n",
+        "while name != 'wind':\n",
+        "    name = input('Agregar variable: ')\n",
+        "    varName.append(name)\n",
+        "    \n",
+        "print(varName)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uhZFJkSkg7Pf",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "name = 'temp'\n",
+        "varName = []\n",
+        "while name != 'wind':\n",
+        "    name = input('Agregar variable: ')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HQ9DT8PHhRHG",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "while True:\n",
+        "    name = input(\"Usuario: \")\n",
+        "    if name != 'Roy':\n",
+        "        print(\"Este usuario no exite!!!, intentelo nuevamente...\")\n",
+        "        continue\n",
+        "    \n",
+        "    passwd = input('contraseña: ')\n",
+        "    if passwd == 'python3':\n",
+        "        break\n",
+        "print('Acceso concedido')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xMzmYb7yig-0",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 286
+        },
+        "outputId": "0ca377da-eac6-4af7-bfa0-5abf776e7e67"
+      },
+      "source": [
+        "CC = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40]\n",
+        "i = 0\n",
+        "print('  C    K     F')\n",
+        "print(\"-\"*20)\n",
+        "\n",
+        "while i < len(CC):\n",
+        "    C = CC[i]\n",
+        "    K = CC[i] + 273\n",
+        "    F = (9.0/5)*C + 32\n",
+        "    print('%s %s %s' %(C, K, F))\n",
+        "    i += 1\n",
+        "print(\"no hay elementos en la lista\")\n"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "  C    K     F\n",
+            "--------------------\n",
+            "-20 253 -4.0\n",
+            "-15 258 5.0\n",
+            "-10 263 14.0\n",
+            "-5 268 23.0\n",
+            "0 273 32.0\n",
+            "5 278 41.0\n",
+            "10 283 50.0\n",
+            "15 288 59.0\n",
+            "20 293 68.0\n",
+            "25 298 77.0\n",
+            "30 303 86.0\n",
+            "35 308 95.0\n",
+            "40 313 104.0\n",
+            "no hay elementos en la lista\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "F8tdNkqAjuNr",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "839c6561-5fe2-4125-d3eb-6946104431fd"
+      },
+      "source": [
+        "def suma(a,b):\n",
+        "  s = a+b\n",
+        "  return s\n",
+        "v = suma(4,6)\n",
+        "v\n"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "e8DLMEvgmSWz",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def resta(a,b):\n",
+        "  r=a-b\n",
+        "  return r\n",
+        "v= resta(4,6)\n",
+        "v"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f30CfuFZmyBP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e5f129ba-0f10-4699-dfb2-09dd6fc8995d"
+      },
+      "source": [
+        "def area_triangulo(b,h):\n",
+        "  A= b*h/2\n",
+        "  return A\n",
+        "area_triangulo(5,10)\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "25.0"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "k3Pd_OhOnP6i",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "160a5bbb-7387-408e-e997-b4c2e5e8d8c9"
+      },
+      "source": [
+        "def kelvin(K):\n",
+        "  C= K-273\n",
+        "  F= 1.8*(K-273)+32\n",
+        "  return C, F\n",
+        "\n",
+        "kelvin(11)\n",
+        "  "
+      ],
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(-262, -439.6)"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uQIzDUFqptHd",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "a3221242-1026-4073-a14f-8e4007c3cc50"
+      },
+      "source": [
+        "import os\n",
+        "#os.mkdir(\"carpeta nueva\")\n",
+        "import math\n",
+        "dir(math)\n",
+        "math.pi"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3.141592653589793"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZrU8IOrMq3Y8",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def area_circulo"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "l9AdeyY4rPBk",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def esfera(r):\n",
+        "  area = \n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NH1bm65PsBV6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "6a1a088b-2632-464a-a7cd-24202d24c161"
+      },
+      "source": [
+        "lista= [1,2,3,4,5,6]\n",
+        "def media(lista):\n",
+        "  m_aritmetica = sum(lista)/len(lista)\n",
+        "  return m_aritmetica\n",
+        "media(lista)"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3.5"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mjuvYvJduKYC",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "lista=[1,2,3,4]\n",
+        "def geometrica(lista):\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "q7bR9BQgxVAS",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "math.pow()\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
