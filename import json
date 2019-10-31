@@ -1,0 +1,244 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jhomivlz98/PROGRAMACION-CLASES/blob/master/import%20json\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9MeFWGjIjlNr",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c1e2ecec-5e86-4e61-e30f-a061362e0b40"
+      },
+      "source": [
+        "import json\n",
+        "s= open(\"estaciones.json\", \"r\")\n",
+        "data=s.read()\n",
+        "s.close()\n",
+        "type(data)\n",
+        "es=json.loads(data)\n",
+        "es\n",
+        "type(es)\n"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "k3ag_PnYlWk-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1ac01a96-92ef-4526-9d34-8837c93adc2e"
+      },
+      "source": [
+        "es.keys()"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['estaciones'])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YXWlNZJGlhMm",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "a302f692-e116-40ad-a0d1-08cc50c4e22f"
+      },
+      "source": [
+        "type(es['estaciones'])\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f86BUlWnlt5d",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2dc589d3-e4b4-42d4-a004-c732dc9f4fb6"
+      },
+      "source": [
+        "type(es['estaciones'][0])\n"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5tDBEAvul-71",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "538f7e63-7f8f-411f-a35c-5c237d5eeb82"
+      },
+      "source": [
+        "es['estaciones'][0].keys()"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['nom', 'cate', 'lat', 'lon', 'ico', 'cod', 'cod_old', 'estado'])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lOc4yR5AmFxW",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "es['estaciones'][0]['nom']"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YkKy3lq8k_kv",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "\n",
+        "for x in es['estaciones']:\n",
+        "  print(x)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_OpBElgMrj7D",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import requests\n",
+        "form bs4 import beautifulsoup\n",
+        "import pamdas as pd "
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qwga97pcsp0J",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "url=\n",
+        "code_estacion= 47278214\n",
+        "year_month =\"201712\"\n",
+        "type_esta= \"H\"\n",
+        "estado=\"AUTOMATICA\""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
